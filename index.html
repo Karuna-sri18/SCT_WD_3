@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <style>
+      body {
+      display: flex;
+      justify-content: center;     /* center horizontally */
+      align-items: center;         /* center vertically */
+      background-color: firebrick;
+      flex-direction: column;      /* stack image + button vertically */
+    }
+     h1 {
+      margin-bottom: 20px;
+      /* background-color: wheat; */
+       font-size: 80px;
+      font-style: oblique;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: aquamarine;
+    }
+    img {
+      width: 200px;
+      height: 60vh;
+      width:60vh;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 30px;
+      font-size: 40px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: green;
+    }
+    </style> 
+</head>
+<body>
+    <h1 align="center">TIC-TAC-TOE</h1>
+    <div style="text-align:center">
+    <image src="unnamed.png" alt="tic-tac image" align="center"></image>
+    </div>
+    <a href="tic-tac.html">
+        <button align="center">Start Game</button>
+    </a>
+
+    <script>
+        const startBtn = document.getElementById('start-btn');
+        const gameContainer = document.getElementById('game-container');
+        startBtn.addEventListener('click', () => {
+        startBtn.style.display = 'none';         
+        gameContainer.style.display = 'block';    
+        createBoard();                            
+        });
+    </script>
+
+</body>
+</html>
