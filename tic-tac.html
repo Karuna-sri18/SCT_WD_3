@@ -15,7 +15,6 @@
 
     h1 {
       margin-bottom: 20px;
-      /* background-color: wheat; */
       font-size: 80px;
       font-style: oblique;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -111,7 +110,7 @@
       e.target.textContent = currentPlayer;
 
       if (checkWin()) {
-        statusDiv.textContent = `🎉 Player ${currentPlayer} wins!`;
+        statusDiv.textContent = `Player ${currentPlayer} wins!`;
         gameActive = false;
       } else if (gameState.every(cell => cell !== '')) {
         statusDiv.textContent = "It's a draw!";
@@ -148,3 +147,4 @@
 
 </body>
 </html>
+
